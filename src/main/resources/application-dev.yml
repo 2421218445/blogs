@@ -1,0 +1,28 @@
+#开发环境
+#数据库配置
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog?userUnicode=true&characterEncoding=utf-8
+#    url: jdbc:mysql://47.100.173.47:3306/blog?userUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  #jpa配置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#日志配置
+logging:
+  level:
+    root: info
+    com.ffy: debug
+#日志文件输出地址
+  file:
+    path: log/blog-dev.log
+#设置项目访问名
+#server:
+#  servlet:
+#    context-path: /ffyblog
+#server:
+#  port: 8888

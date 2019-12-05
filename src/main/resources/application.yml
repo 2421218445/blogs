@@ -1,0 +1,7 @@
+#总配置
+spring:
+  profiles:
+    #选择配置环境
+    active: dev
+
+comment.avatar: /images/avatar.png

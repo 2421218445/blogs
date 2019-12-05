@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>服务器跑路了~</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" th:href="@{/css/my-css.css}"/>
+</head>
+<body>
+<nav th:replace="~{_fragment :: nav(0)}"></nav>
+<div class="m-container-small m-padded-tb-massive">
+    <div class="ui error message m-padded-tb-huge">
+        <h2>错误</h2>
+        <p>对不起，服务器跑路了~</p>
+    </div>
+</div>
+<footer th:replace="~{_fragment :: footer}"></footer>
+</body>
+</html>
